@@ -16,7 +16,6 @@ The vector of chemical species codes.
 Get species list from NetCDF file
 }
 \examples{
-add(1, 1)
 tfile <- system.file("extdata","aust_20140212_nat_0.800dg_morw.nc",package="raaqfs")
 mydata <- nc_open(tfile)
 species<-get_spec_list(mydata)

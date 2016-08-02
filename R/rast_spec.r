@@ -3,7 +3,7 @@
 #' @param input An open ncdf4 object.
 #' @param spec Full species name (4 chars) including spaces.
 #' @param hour Hour (1-24) to return
-#' @return Timeseries vector of species concentration.
+#' @return Raster grid of species concentration.
 #' @examples
 #' library(ncdf4)
 #' library(raster)

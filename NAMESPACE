@@ -3,3 +3,4 @@
 export(drill_spec)
 export(get_spec_list)
 export(rast_spec)
+export(stack_spec)

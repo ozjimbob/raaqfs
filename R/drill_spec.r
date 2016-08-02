@@ -6,7 +6,6 @@
 #' @param lon Longitude of sample point
 #' @return Timeseries vector of species concentration.
 #' @examples
-#' add(1, 1)
 #' tfile <- system.file("extdata","aust_20140212_nat_0.800dg_morw.nc",package="raaqfs")
 #' mydata <- nc_open(tfile)
 #' lat <- -33.5

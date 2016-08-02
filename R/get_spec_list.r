@@ -3,7 +3,6 @@
 #' @param input An open ncdf4 object.
 #' @return The vector of chemical species codes.
 #' @examples
-#' add(1, 1)
 #' tfile <- system.file("extdata","aust_20140212_nat_0.800dg_morw.nc",package="raaqfs")
 #' mydata <- nc_open(tfile)
 #' species<-get_spec_list(mydata)

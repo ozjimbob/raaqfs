@@ -22,7 +22,7 @@ library(ncdf4)
 library(raster)
 tfile <- system.file("extdata","aust_20140212_nat_0.800dg_morw.nc",package="raaqfs")
 mydata <- nc_open(tfile)
-salt <- stack_spec(mydata,"SS25",1) 
+salt <- stack_spec(mydata,"SS25") 
 animate(salt,pause=0.1,n=2)
 }
 

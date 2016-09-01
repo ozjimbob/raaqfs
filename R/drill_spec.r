@@ -21,9 +21,9 @@ drill_spec=function(input,spec,lat,lon){
   if(length(vno)==0){
     stop(paste0("Chemical species ",spec," not found."))
   }
-  odat=ncvar_get(nc=input,varid="cavg")
-  lons=ncvar_get(input,"lon")
-  lats=ncvar_get(input,"lat")
+  odat=ncdf4::ncvar_get(nc=input,varid="cavg")
+  lons=ncdf4::ncvar_get(input,"lon")
+  lats=ncdf4::ncvar_get(input,"lat")
   if(lat < min(lats) | lat > max(lats) | lon < min(lons) | lon > max(lons)){
     stop("Coordinates provided are out of range of grid.")
   }

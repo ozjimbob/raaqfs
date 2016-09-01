@@ -11,7 +11,7 @@
 #' print(species)
 #' @export
 get_spec_list=function(input){
-  spec=ncvar_get(nc=input,varid="name_fspec")
+  spec=ncdf4::ncvar_get(nc=input,varid="name_fspec")
   nvar = nchar(spec)/4
   stseq=seq(from=1,to=nchar(spec),by=4)
   snpfn = function(st){substr(spec,st,st+3)}

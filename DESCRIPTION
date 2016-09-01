@@ -1,14 +1,16 @@
 Package: raaqfs
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Read and Plot AAQFS CTM Files
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Grant Williamson
+Maintainer: Grant Williamson <grant.williamson@utas.edu.au>
+Description: Tools for accessing and plotting Australian Air Quality Forecast System CTM files.
+License: GPL (>=3) 
 LazyData: TRUE
 Imports:
     ncdf4,
   raster,
-  rgdal
+  rgdal,
+  sp,
+  maps
 RoxygenNote: 5.0.1

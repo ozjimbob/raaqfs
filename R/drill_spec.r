@@ -24,7 +24,7 @@ drill_spec=function(input,spec,lat,lon){
   odat=ncvar_get(nc=input,varid="cavg")
   lons=ncvar_get(input,"lon")
   lats=ncvar_get(input,"lat")
-  if(lat < min(lat) | lat > max(lat) | lon < min(lon) | lon > max(lon)){
+  if(lat < min(lats) | lat > max(lats) | lon < min(lons) | lon > max(lons)){
     stop("Coordinates provided are out of range of grid.")
   }
   tlon=which.min(abs(lons-lon))
